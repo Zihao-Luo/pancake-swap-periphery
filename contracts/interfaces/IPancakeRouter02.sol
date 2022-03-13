@@ -41,4 +41,8 @@ interface IPancakeRouter02 is IPancakeRouter01 {
         address to,
         uint deadline
     ) external;
+    function getAmountsOut(
+        uint amountIn, 
+        address[] calldata path
+    ) external view returns (uint[] memory amounts);
 }
